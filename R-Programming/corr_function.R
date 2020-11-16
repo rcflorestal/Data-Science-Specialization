@@ -28,7 +28,6 @@ corr <- function(directory, threshold = 0){
                 }else{
                         return(c(0))
                 }
-
         }
         res
 }
