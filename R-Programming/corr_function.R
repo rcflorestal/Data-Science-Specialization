@@ -9,7 +9,7 @@
 # a numeric vector of length 0.                                                # 
 #------------------------------------------------------------------------------#
 
-#setwd("C:/Data-Science-Foundations-using-R-Specialization/R-Programming/specdata/")
+#setwd("C:/Data-Science-Foundations-using-R-Specialization/R-Programming/")
 
 corr <- function(directory, threshold = 0){
         ## Creates a list from all files in the directory
