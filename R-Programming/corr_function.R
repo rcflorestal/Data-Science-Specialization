@@ -8,6 +8,7 @@
 # If no monitors meet the threshold requirement then the function should return#
 # a numeric vector of length 0.                                                # 
 #------------------------------------------------------------------------------#
+setwd("C:/Data-Science-Foundations-using-R-Specialization/R-Programming/specdata/")
 
 corr <- function(directory, threshold = 0){
         ## Creates a list from all files in the directory
@@ -20,7 +21,7 @@ corr <- function(directory, threshold = 0){
                 df <- read.csv(lf[i])
                 df2 <- complete.cases(df)
                 df <- df[df2, ]
-                ## Calculates correlations between sulfate and bitrate
+                ## Calculates correlations between sulfate and nitrate
                 if(nrow(df) > threshold){
                         corre <- cor(df[["sulfate"]], df[["nitrate"]])
                         res <- append(res, corre)
