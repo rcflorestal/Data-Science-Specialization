@@ -1,4 +1,4 @@
-# Data-Science-Foundations-using-R-Specialization
+# Data Science: Foundations using R Specialization
 
 This is a course of Data Science Specialiation at Johns Hopkins University
 and offered by [COUSERA](https://www.coursera.org) Platform.
