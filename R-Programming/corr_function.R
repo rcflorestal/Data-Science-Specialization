@@ -8,7 +8,8 @@
 # If no monitors meet the threshold requirement then the function should return#
 # a numeric vector of length 0.                                                # 
 #------------------------------------------------------------------------------#
-setwd("C:/Data-Science-Foundations-using-R-Specialization/R-Programming/specdata/")
+
+#setwd("C:/Data-Science-Foundations-using-R-Specialization/R-Programming/specdata/")
 
 corr <- function(directory, threshold = 0){
         ## Creates a list from all files in the directory
