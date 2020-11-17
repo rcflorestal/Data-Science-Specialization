@@ -7,6 +7,7 @@
 # groups determined by a factor or list of factors.                            #
 # -----------------------------------------------------------------------------#
 
+# Require package
 library(datasets)
 
 # Read the data frame airquality
