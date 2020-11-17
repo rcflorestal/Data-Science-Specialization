@@ -1,3 +1,4 @@
+## Week 2 scripts
 # Connect to website
 dataset_url <- "http://s3.amazonaws.com/practice_assignment/diet_data.zip"
 
