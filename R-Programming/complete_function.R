@@ -3,7 +3,6 @@
 # frame where the first column is the name of the file and the second column is
 # the number of complete cases.
 
-
 complete <- function(directory, id = 1:332){
         ## Creates a list of all files in the directory
         lf <- list.files(path = directory, pattern = ".csv", full.names = TRUE)
