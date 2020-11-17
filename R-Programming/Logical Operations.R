@@ -88,4 +88,3 @@ any(ints < 0)   ## Check out if all elements of ints are less than 0.
 all(ints > 0)   ## Check out if all elements of ints are greater than 0.
 
 
-
