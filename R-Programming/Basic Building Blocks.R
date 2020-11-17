@@ -21,9 +21,9 @@
 # The way you assign a value to a variable in R is by using the assignment 
 # operator, which is just a 'less than' symbol followed by a 'minus' sign. 
 # It looks like this: <-
-# To assign the result of 5 + 7 to a new variable called x, you type x <- 5 + 7. 
+# To assign the result of 5 + 8 to a new variable called x, you type x <- 5 + 8. 
 # This can be read as 'x gets 5 plus 7'.
-x <- 5 + 7
+x <- 5 + 8
 
 # To view the contents of the variable x, just type x and press Enter.
 x
