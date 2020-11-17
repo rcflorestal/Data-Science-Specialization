@@ -54,6 +54,12 @@ file.create("mytest.R")
 # by listing all the files in the current directory.
 list.files()
 
+# List all files for all subfolders
+list.files(path = getwd(), recursive = TRUE, full.names = TRUE)
+
+# List all .csv files 
+list.files(path = getwd(), pattern = "*.csv$", recursive = TRUE)
+
 # Check to see if "mytest.R" exists in the working directory using.
 file.exists("mytest.R")
 
@@ -69,14 +75,18 @@ file.rename("mytest.R", "mytest2.R")
 # Make a copy of "mytest2.R" called "mytest3.R" using file.copy().
 file.copy("mytest2.R", "mytest3.R")
 
-# Provide the relative path to the file "mytest3.R" by using file.path().
+# Creating and Deleting files
+my_file <- "C:/Robson/temp_file.csv"    ## creates temporary file
+write.csv(x = data.frame(x = 1:10),     ## write in the file
+          file = my_file)
+file.remove(my_file)                    ## delete it
 
+# Provide the relative path to the file "mytest3.R" by using file.path().
 # You now have two files in the current directory. That may not seem very
 # interesting. But what if you were working with dozens, or millions, of 
 # individual files? In that case, being able to programatically act on many 
 # files would be absolutely necessary. Don't forget that you can, temporarily, 
 # leave the lesson by typing play() and then return by typing nxt().
-
 # Provide the relative path to the file "mytest3.R" by using file.path().
 file.path("mytest3.R")
 
@@ -95,6 +105,9 @@ file.path("folder1", "folder2")
 # dir.create() and file.path().
 dir.create(file.path("testdir2", "testdir3"), recursive = TRUE)
 
+# To check if a directory exists:
+dir.exists("testdir2")
+
 # Go back to your original working directory using setwd(). 
 # (Recall that we created the variable old.dir with the full path for the orginal 
 # working directory at the start of these questions.)
@@ -102,5 +115,8 @@ setwd(old.dir)
 
 # After you finish this lesson delete the 'testdir' directory that you just 
 # left (and everything in it)
+
+# To delete directories and all their files, use unlinke function:
+unlink(x = "testdir2", recursive = TRUE)
 
 
