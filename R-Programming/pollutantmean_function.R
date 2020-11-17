@@ -20,7 +20,6 @@ pollutantmean <- function(directory, pollutant, id = 1:332){
         mn
 }
 
-
 # Call the function
 # Question 1
 pollutantmean("specdata", "sulfate", 1:10)      ## 4.064128
