@@ -61,4 +61,3 @@ identical(vect, vect2)
 
 # Likewise, we can specify a vector of names
 vect[c("foo", "bar")]
-
