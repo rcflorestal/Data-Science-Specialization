@@ -5,6 +5,7 @@
 #
 # Any operation involving NA generally yields NA as the result. To illustrate, 
 # let's create a vector c(44, NA, 5, NA) and assign it to a variable x.
+
 x <- c(44, NA, 5, NA)
 x
 
