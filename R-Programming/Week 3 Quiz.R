@@ -1,4 +1,4 @@
-# Week 3 Quiz
+## Week 3 Quiz - R programming
 
 library(datasets)
 
