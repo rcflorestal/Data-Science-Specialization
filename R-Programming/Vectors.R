@@ -1,4 +1,4 @@
-# Vectors
+## Vectors
 
 # First, create a numeric vector num_vect that contains the values 0.5, 55, -10,
 # and 6.
