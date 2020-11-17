@@ -1,3 +1,5 @@
+## Use of the dplyr package
+
 library(dplyr)
 
 mydf <- read.csv(path2csv, stringsAsFactors = F)
