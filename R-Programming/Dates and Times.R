@@ -73,7 +73,7 @@ dmy(25081985)
 ymd("1920/1/2")
 
 # In addition to dates, we can parse date-times. I've created a date-time object 
-# called dt1. Take a look at it now.
+# called dt1.
 dt1 <- c("2014-08-23 17:23:02")
 dt1
 
