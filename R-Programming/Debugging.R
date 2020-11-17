@@ -20,6 +20,7 @@ printMessage <- function(x){
         }
 }
 
+# Call the function
 printMessage(1)
 printMessage(-1)
 printMessage(NA)
@@ -57,6 +58,7 @@ printMessage2(x)
 # arguments. The other way is to vectorize the printmessage2() function to allow 
 # it to take vector arguments.
 # For the first way, we simply need to check the length of the input.
+
 printMessage3 <- function(x){
         if(length(x) > 1L){
                 stop("'x' has length > 1")
