@@ -1,5 +1,6 @@
 # removes any left over objects
 rm(list = ls())
+
 library("swirl")
 
 # now can use install_course
