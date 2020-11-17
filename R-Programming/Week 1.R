@@ -1,3 +1,4 @@
+## Week 1 scripts
 # Getting Started and R Nuts and Bolts
 myfunction <- function() {
   x <- rnorm(100)
