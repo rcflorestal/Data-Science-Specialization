@@ -1,4 +1,4 @@
-## Week 1 Quiz
+## Week 1 Quiz - R Programming
 ## Question 10:
 ## Suppose I have a vector x <- c(17, 14, 4, 5, 13, 12, 10) and I want to set all 
 ## elements of this vector that are greater than 10 to be equal to 4. What R code 
