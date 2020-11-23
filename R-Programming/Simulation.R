@@ -77,7 +77,31 @@ rnorm(5)
 # come in the form of counts.
 rpois(10, 1)    ## Counts with a mean of 1
 
-rpois(10, 10)   ## Counts with a mean of 2
+rpois(10, 2)   ## Counts with a mean of 2
+
+# what if we want to simulate 100 *groups* of random numbers, each containing 5
+# values generated from a Poisson distribution with mean 10?
+rpois(5, 10)
+
+# Now use replicate(100, rpois(5, 10)) to perform this operation 100 times. 
+# Store the result in a new variable called my_pois.
+my_pois <- replicate(100, rpois(5, 10))
+
+# Take a look at the contents of my_pois.
+my_pois
+
+# replicate() created a matrix, each column of which contains 5 random numbers 
+# generated from a Poisson distribution with mean 10. Now we can find the mean
+# of each column in my_pois using the colMeans() function. Store the result in a 
+# variable called cm.
+cm <- colMeans(my_pois)
+        
+# And let's take a look at the distribution of our column means by plotting a 
+# histogram with hist(cm).
+hist(cm)
+
+# Looks like our column means are almost normally distributed, right? That's the
+# Central Limit Theorem at work
 
 ### Simulating a Linear Model ###
 # Suppose we want to simulate from the following linear model:
@@ -147,6 +171,49 @@ sample(1:10)
 
 # Sample with replacement
 sample(1:10, replace = TRUE)
+
+# suppose we want to simulate 100 flips of an unfair two-sided coin. 
+# This particular coin has a 0.3 probability of landing 'tails' and a 0.7 
+# probability of landing 'heads'.
+#
+# Let the value 0 represent tails and the value 1 represent heads. Use sample()
+# to draw a sample of size 100 from the vector c(0,1), with replacement. Since 
+# the coin is unfair, we must attach specific probabilities to the values 0 
+# (tails) and 1 (heads) with a fourth argument, prob = c(0.3, 0.7). 
+# Assign the result to a new variable called flips.
+flips <- sample(c(0, 1), 100, replace = TRUE, prob = c(0.3, 0.7))
+
+# View the contents of the flips variable.
+flips
+
+# Since we set the probability of landing heads on any given flip to be 0.7,
+# we'd expect approximately 70 of our coin flips to have the value 1. Count the 
+# actual number of 1s contained in flips using the sum() function.
+sum(flips)
+
+# A coin flip is a binary outcome (0 or 1) and we are performing 100 independent 
+# trials (coin flips), so we can use rbinom() to simulate a binomial random 
+# variable. Pull up the documentation for rbinom() using ?rbinom.
+?rbinom
+
+# A binomial random variable represents the number of 'successes' (heads) in a 
+# given number of independent 'trials' (coin flips). Therefore, we can generate 
+# a single random variable that represents the number of heads in 100 flips of
+# our unfair coin using:
+rbinom(1, size = 100, prob = 0.7)
+
+# Note that you only specify the probability of 'success' (heads) and NOT the 
+# probability of 'failure' (tails)
+#
+# Equivalently, if we want to see all of the 0s and 1s, we can request 100 
+# observations, each of size 1, with success probability of 0.7. Give it a try,
+# assigning the result to a new variable called flips2.
+flips2 <- rbinom(n = 100, size = 1, prob = 0.7)
+flips2
+
+# Now use sum() to count the number of 1s (heads) in flips2. It should be close 
+# to 70!
+sum(flips2)
 
 # To sample more complicated things, such as rows from a data frame or a list, 
 # you can sample the indices into an object rather than the elements of the 
