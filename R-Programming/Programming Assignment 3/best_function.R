@@ -33,6 +33,7 @@
 
 ## Load package
 library(dplyr)
+library(tidyr)
 library(stringr)
 
 ## Set work directory
@@ -90,3 +91,4 @@ best("MD", "pneumonia")     ## "GREATER BALTIMORE MEDICAL CENTER"
 best("BB", "heart attack")  ## Error in best("BB", "heart attack") : invalid state
 best("SC", "heart attack")
 best("NY", "pneumonia")
+best("AK", "pneumonia")
