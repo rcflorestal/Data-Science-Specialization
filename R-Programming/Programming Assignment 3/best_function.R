@@ -53,9 +53,9 @@ best <- function(state, outcome){
         df <- data.frame(
                 State = outcomeData[, 7],
                 Hospital_Name = outcomeData[, 2],
-                Heart_Attack = outcomeData[, 11],
-                Heart_Failure = outcomeData[, 17],
-                Pneumonia = outcomeData[, 23]
+                Heart_Attack = as.numeric(outcomeData[, 11]),
+                Heart_Failure = as.numeric(outcomeData[, 17]),
+                Pneumonia = as.numeric(outcomeData[, 23])
         )
         
         ## Check if State is valid
