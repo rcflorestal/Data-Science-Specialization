@@ -13,7 +13,7 @@
 #
 #' @pars
 #' state
-#' outcome
+#' outcome - The name mortality rates
 #' ranking
 #' @details 
 #' Read outcome-of-care-measures.csv file
@@ -21,7 +21,7 @@
 #' A character vector with the name of the hospital that has the ranking 
 #' specified by the num argument. 
 
-## Load package
+## Load packages
 library(dplyr)
 library(tidyr)
 library(stringr)
