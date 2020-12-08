@@ -37,16 +37,16 @@ my_fileCode <- "C:/Data-Science-Foundations-using-R-Specialization/Getting-and-C
 # Download files
 # .csv file
 download.file(url = lk_data,
-              destfile = my_dirData)
+              destfile = my_fileData)
 
 # Code Book file
 download.file(url = lk_codeBook,
-              destfile = my_dirCode,
+              destfile = my_fileCode,
               mode = "wb")
 
 # Question 1
 # Read .csv file
-housing <- read.csv(file = my_dirData,
+housing <- read.csv(file = my_fileData,
                     header = TRUE,
                     sep = ",")
 
