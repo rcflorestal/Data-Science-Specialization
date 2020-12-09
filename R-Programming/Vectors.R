@@ -53,3 +53,10 @@ paste(LETTERS, 1:4, sep = "-")
 # Since the character vector LETTERS is longer than the numeric vector 1:4, R 
 # simply recycles, or repeats, 1:4 until it matches the length of LETTERS.
 
+##
+x = c(1, 3, 77, 54, 23, 7, 76, 5)
+
+x[-2] # all but the second
+
+x[-c(1, 2, 3)]  # drop first 3
+x[-(1:3)]       # shorthand
