@@ -62,5 +62,4 @@ str(df)
 ## Create a logical vector that identifies the households on greater than 10 
 ## acres who sold more than $10,000 worth of agriculture products
 agricultureLogical <- df$ACR == 3 & df$AGS == 6
-agricultureLogical
 which(agricultureLogical) 
