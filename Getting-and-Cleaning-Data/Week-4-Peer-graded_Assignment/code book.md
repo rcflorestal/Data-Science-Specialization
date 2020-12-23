@@ -1,11 +1,3 @@
----
-title: "Code Book"
-author: "Robson Cruz"
-date: "23/12/2020"
-output: html_document
----
-
-
 # CODE BOOK
 This data frame was cleaning from the data set named: subject_test, X_test, 
 y_test, subject_train, X_train and y_train, which are part from the Human 
@@ -23,23 +15,23 @@ The training and the test sets were merged to create a single data frame.
 6 LAYING
 
 ## ith respect to the dat sets X_test and X_train the following original variables were used:
-1 tBodyAcc-mean()-X
-2 tBodyAcc-mean()-Y
-3 tBodyAcc-mean()-Z
-4 tBodyAcc-std()-X
-5 tBodyAcc-std()-Y
-6 tBodyAcc-std()-Z
-7 tBodyAcc-mad()-X
-8 tBodyAcc-mad()-Y
-9 tBodyAcc-mad()-Z
-10 tBodyAcc-max()-X
-11 tBodyAcc-max()-Y
-12 tBodyAcc-max()-Z
-13 tBodyAcc-min()-X
-14 tBodyAcc-min()-Y
-15 tBodyAcc-min()-Z
-16 tBodyAcc-sma()
-17 tBodyAcc-energy()-X
+1. tBodyAcc-mean()-X
+2. tBodyAcc-mean()-Y
+3. tBodyAcc-mean()-Z
+4. tBodyAcc-std()-X
+5. tBodyAcc-std()-Y
+6. tBodyAcc-std()-Z
+7. tBodyAcc-mad()-X
+8. tBodyAcc-mad()-Y
+9. tBodyAcc-mad()-Z
+10. tBodyAcc-max()-X
+11. tBodyAcc-max()-Y
+12. tBodyAcc-max()-Z
+13. tBodyAcc-min()-X
+14. tBodyAcc-min()-Y
+15. tBodyAcc-min()-Z
+16. tBodyAcc-sma()
+17. tBodyAcc-energy()-X
 18 tBodyAcc-energy()-Y
 19 tBodyAcc-energy()-Z
 20 tBodyAcc-iqr()-X
