@@ -6,15 +6,15 @@ format.
 The data sets can be found at: <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
 The training and the test sets were merged to create a single data frame.
 
-## With respect to the dat sets x_train and y_train the following original variables were used:
-1 WALKING
-2 WALKING_UPSTAIRS
-3 WALKING_DOWNSTAIRS
-4 SITTING
-5 STANDING
-6 LAYING
+### With respect to the dat sets x_train and y_train the following original variables were used:
+1. WALKING
+2. WALKING_UPSTAIRS
+3. WALKING_DOWNSTAIRS
+4. SITTING
+5. STANDING
+6. LAYING
 
-## ith respect to the dat sets X_test and X_train the following original variables were used:
+### ith respect to the dat sets X_test and X_train the following original variables were used:
 1.   tBodyAcc-mean()-X
 2.   tBodyAcc-mean()-Y
 3.   tBodyAcc-mean()-Z
