@@ -9,8 +9,8 @@ output: html_document
 This script is part of the Getting and Cleaning Data Module of the Data Science Specialization, offered by Johns Hopkins University through  Coursera platform. 
 
 ### About the data frame
-This data frame was cleaning as tidy from the originals data sets which used to creates the ![_Human 
-Activity Recognition Using Smartphones Data Set_](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones), Version 1.0.
+This data frame was cleaning as tidy from the originals data sets which used to creates the [Human 
+Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones), Version 1.0.
 The present data frame was cleaning from the data sets named: subject_test, X_test, 
 y_test, subject_train, X_train and y_train. All data sets are in .txt file 
 format.
