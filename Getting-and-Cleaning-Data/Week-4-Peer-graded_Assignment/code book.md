@@ -14,7 +14,7 @@ The training and the test sets were merged to create a single data frame.
 5. STANDING
 6. LAYING
 
-### ith respect to the dat sets X_test and X_train the following original variables were used:
+### With respect to the dat sets X_test and X_train the following original variables were used:
 1.   tBodyAcc-mean()-X
 2.   tBodyAcc-mean()-Y
 3.   tBodyAcc-mean()-Z
