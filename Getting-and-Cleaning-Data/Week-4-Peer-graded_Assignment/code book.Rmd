@@ -11,7 +11,7 @@ This data frame was cleaning from the data set named: subject_test, X_test,
 y_test, subject_train, X_train and y_train, which are part from the Human 
 Activity Recognition Using Smartphones Data Set. All data sets are in .txt file 
 format.
-The data sets can be found at: < http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones >
+The data sets can be found at: <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
 The training and the test sets were merged to create a single data frame.
 
 ## With respect to the dat sets x_train and y_train the following original variables were used:
