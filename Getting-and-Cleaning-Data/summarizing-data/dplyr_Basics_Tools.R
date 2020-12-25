@@ -93,7 +93,7 @@ summarize(hotcold, pm25 = mean(pm25, na.rm = TRUE),
           o3 = max(o3tmean2),
           no2 = median(no2tmean2))
 
-## group by year
+## create a year varible using as.POSIXlt() and group by year
 chicago <- mutate(chicago, 
                   year = as.POSIXlt(date)$year + 1900)
 
@@ -110,3 +110,4 @@ chicago %>%
         summarize(pm25 = mean(pm25, na.rm = TRUE),
                   o3 = max(o3tmean2, na.rm = TRUE),
                   no2 = median(no2tmean2, na.rm = TRUE))
+
