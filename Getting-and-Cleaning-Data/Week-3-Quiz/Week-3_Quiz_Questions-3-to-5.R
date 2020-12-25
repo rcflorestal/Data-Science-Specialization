@@ -1,10 +1,8 @@
-##--------------------------------Week 3 Quiz---------------------------------##
-##                       Getting and Cleaning Data                            ##         
+##-------------------------------Week 3 Quiz----------------------------------##
 ##                                                                            ##
-##                                                                            ##
-## This script is part of the R-Programming Module of the Data Science        ##
-## Specialization, offered by Johns Hopkins University through Coursera       ## 
-## platform.                                                                  ##
+## This script is part of the Getting and Cleaning Data Module of the Data    ##
+## Science Specialization, offered by Johns Hopkins University through        ##
+## Coursera platform.                                                         ##
 ##                                                                            ##
 ##----------------------------------------------------------------------------##
 
