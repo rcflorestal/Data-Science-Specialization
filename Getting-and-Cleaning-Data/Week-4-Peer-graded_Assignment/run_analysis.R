@@ -29,21 +29,24 @@ lk <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%
 
 dataset <- "C:/Data-Science-Foundations-using-R-Specialization/Getting-and-Cleaning-Data/Week-4-Peer-graded_Assignment/data/dataset.zip"
 
-## Download
+## Downloads
 #
-if(!dir.exists("./data") | !file.exists("./dataset.zip")){
+if(!dir.exists("./data")){
         dir.create("data")
-        download.file(url = lk,
-                      destfile = dataset,
-                      mode = "wb")
 }
 
-## Unzip files
-#
-if(!file.exists){
+if(!file.exists("./data/dataset.zip")){
+download.file(url = lk,
+              destfile = dataset,
+              mode = "wb")
+        
+        ## Unzip files
         unzip(zipfile = dataset,
               exdir = "./data")
 }
+
+
+
 
 ## List files in the current work directory
 #
@@ -153,4 +156,8 @@ df3 <- df2 %>%
         summarize_all(list(mean))
 
 as_tibble(df3)
-dim(df3)
+
+## Save tidy data set
+write.csv(df3, 
+          "C:/Data-Science-Foundations-using-R-Specialization/Getting-and-Cleaning-Data/Week-4-Peer-graded_Assignment/tidyDF.csv",
+          row.names = FALSE)
