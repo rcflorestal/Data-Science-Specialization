@@ -15,7 +15,8 @@ According to the authors[1] of the original data set, the experiment have been c
     3. Uses descriptive activity names to name the activities in the data set
     4. Appropriately labels the data set with descriptive variable names. 
     5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
+### Tidy Data Set
+[Click here to see the Tidy Data Set](https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Getting-and-Cleaning-Data/Week-4-Peer-graded_Assignment/tidyDF.csv)
  #### Source   
     [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. 
         A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th 
