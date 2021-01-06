@@ -84,7 +84,8 @@ plot(df$Global_reactive_power ~ df$Time,
      type = "l",
      lwd = 2.5,
      cex = 0.7,
-     ylab = "Global_reactive_power", xlab = "datetime")
+     ylab = "Global_reactive_power", 
+     xlab = "datetime")
 
 ## Close the graphics devices
 dev.off()
