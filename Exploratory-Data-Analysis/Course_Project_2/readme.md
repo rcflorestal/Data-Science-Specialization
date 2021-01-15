@@ -33,4 +33,5 @@ make a plot showing the total PM2.5 emission from all sources for each of the ye
   <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Exploratory-Data-Analysis/Course_Project_2/plot1.png">
 </p>
  
-
+2. Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008?
+Use the base plotting system to make a plot answering this question.
