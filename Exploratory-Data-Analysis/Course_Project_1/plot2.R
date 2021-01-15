@@ -46,10 +46,15 @@ df <- dataSet %>%
 ## Read the new data frame
 as_tibble(df)
 
+## Open the graphics devices to save the plot2
+png("plot2.png",
+    width = 480,
+    height = 480)
+
 ## Set plot2 ##
 plot(df$Global_active_power ~ df$Time, data = df, type = "l",
      ylab = "Global Active Power (kilowatts)", xlab = "")
 
-dev.copy(png, "C:/Data-Science-Foundations-using-R-Specialization/Exploratory-Data-Analysis/Course_Project_1/plot2.png")
+## Close the graphics devices
 dev.off()
 
