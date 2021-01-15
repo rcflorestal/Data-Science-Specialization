@@ -47,3 +47,9 @@ Which have seen increases in emissions from 1999–2008? Use the ggplot2 plottin
 <p align="center" width="100%">
   <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Exploratory-Data-Analysis/Course_Project_2/plot3.png">
   </p>
+  
+4. Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
+
+<p align="center" width="100%">
+  <img src="">
+  </p>
