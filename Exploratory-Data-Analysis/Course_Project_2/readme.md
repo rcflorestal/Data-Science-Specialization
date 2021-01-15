@@ -51,5 +51,18 @@ Which have seen increases in emissions from 1999–2008? Use the ggplot2 plottin
 4. Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
 
 <p align="center" width="100%">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Exploratory-Data-Analysis/Course_Project_2/plot4.png">
+  </p>
+
+5. How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?
+
+<p align="center" width="100%">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Exploratory-Data-Analysis/Course_Project_2/plot5.png">
+  </p>
+  
+ 6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037"\color{red}{\verb|fips == "06037"|}fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?
+ 
+ <p align="center" width="100%">
   <img src="">
   </p>
+  
