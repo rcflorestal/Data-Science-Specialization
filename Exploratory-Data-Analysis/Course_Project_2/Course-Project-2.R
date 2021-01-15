@@ -170,7 +170,10 @@ png("plot5.png",
 ## Filter and summary the data
 NEI_motor <- NEI %>%
         left_join(SCC, by = "SCC") %>%
-        filter(str_detect(EI.Sector, "Vehicle") & fips == "24510")
+        filter(str_detect(EI.Sector, "Vehicle") & fips == "24510") %>%
+        group_by(year) %>%
+        select(year, Emissions) %>%
+        summarize(Emissions = sum(Emissions))
 
 ## Set plot5
 ggplot(na.omit(NEI_motor), aes(factor(year), Emissions)) +
@@ -190,8 +193,8 @@ dev.off()
 ##' California (fips == "06037"). Which city has seen greater changes
 ##' over time in motor vehicle emissions? 
 ##
-## Open the graphics devices to save the plot5
-png("plot5.png",
+## Open the graphics devices to save the plot6
+png("plot6.png",
     width = 480,
     height = 480)
 
