@@ -45,5 +45,5 @@ variable, which of these four sources have seen decreases in emissions from 1999
 Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.
 
 <p align="center" width="100%">
-  <img src="">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Exploratory-Data-Analysis/Course_Project_2/plot3.png">
   </p>
