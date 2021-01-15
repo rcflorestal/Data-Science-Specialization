@@ -12,6 +12,9 @@
 library(dplyr)
 library(tidyr)
 
+## Set language
+Sys.setlocale("LC_ALL","English")
+
 ## Set the work directory
 setwd("C:/Data-Science-Foundations-using-R-Specialization/Exploratory-Data-Analysis/Course_Project_1")
 
