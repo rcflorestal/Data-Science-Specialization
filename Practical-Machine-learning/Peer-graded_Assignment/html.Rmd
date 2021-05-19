@@ -190,7 +190,7 @@ test2 <- testing[, keepNames]
 test2$user_name <- factor(test2$user_name)
 
 examPreds <- predict(rf, newdata = test2)
-results <- matrix(examPreds, nrow = 2)
+results <- matrix(examPreds, nrow = 20)
 colnames(results) <- test$problem_id
 kable(results)
 
