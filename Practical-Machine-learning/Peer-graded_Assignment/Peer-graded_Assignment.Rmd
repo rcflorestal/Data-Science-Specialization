@@ -3,8 +3,8 @@ title: "Human Activity Recognition"
 author: "Robson Cruz"
 date: "12/05/2021"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include = FALSE}
