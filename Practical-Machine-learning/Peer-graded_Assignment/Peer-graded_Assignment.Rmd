@@ -176,8 +176,8 @@ rf = train(
 rf
 
 ## Compare Predictions with Validation Set
-preds <- predict(rf, newdata = test)
-confusionMatrix(preds, test$classe)
+preds <- predict(rf, newdata = trainingSample)
+confusionMatrix(preds, trainingSample$classe)
 
 ## Show up the most important variable
 rf_plot <- varImp(rf, scale = FALSE, type = 1)
@@ -190,7 +190,7 @@ plot(
 test2 <- testing[, keepNames]
 test2$user_name <- factor(test2$user_name)
 
-examPreds <- predict(rf, newdata = test)
+examPreds <- predict(rf, newdata = test2)
 results <- matrix(examPreds, nrow = 1)
 colnames(results) <- test$problem_id
 kable(results)
