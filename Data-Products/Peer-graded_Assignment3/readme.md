@@ -13,5 +13,5 @@ the [forest inventory](https://github.com/rcflorestal/Data-Science-Specializatio
 
 ## Map of the forest inventory
 <p align="center" width="100%">
-  <img src="">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Products/Peer-graded_Assignment3/map.png">
 </p>
