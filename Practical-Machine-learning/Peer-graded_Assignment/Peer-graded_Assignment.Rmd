@@ -3,8 +3,8 @@ title: "Human Activity Recognition"
 author: "Robson Cruz"
 date: "12/05/2021"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include = FALSE}
@@ -205,7 +205,7 @@ pml_write_files = function(x){
                 row.names = FALSE, 
                 col.names = FALSE)
   }
-}-
+}
 
 pml_write_files(examPreds)
 ```
