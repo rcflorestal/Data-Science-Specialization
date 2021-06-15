@@ -6,22 +6,25 @@ we will use Natural Language Processing, Text Mining, and the associated tools i
 
 # Summary of the data sets
 <p align="center">
-<img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/tab_1_summary.png">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/tab_1_summary.png">
 </p>
 
-## Word Cloud Chart
+# Word Cloud Chart
 <p align="center">
-<img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/wordCloud.png">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/wordCloud.png">
 </p>
 
-## Most Profanity Words on US Twitter
+# Most Profanity Words on US Twitter
 <p align="center">
-<img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/Most_Profanity_Used.png">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/Most_Profanity_Used.png">
 </p>
 
-## Sentiment of Words
+# Sentiment of Words
 <p align="center">
-<img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/SentimentChart.png">
-</p>
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/SentimentChart.png">
+  </p>
 
-
+# Most Frequent Bigrams
+<p align="center">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/Most_Frequent_Bigrams.png">
+  </p>
