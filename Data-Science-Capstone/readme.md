@@ -1,6 +1,5 @@
 ## Abstract
-This capstone we will be applying data science in the area of natural language processing. As a first step toward working on this project, 
-we will use Natural Language Processing, Text Mining, and the associated tools in R to analyze a data set from US twitter.
+In this capstone, we will be applying data science in the area of natural language processing. As a first step toward working on this project, we will use Natural Language Processing, Text Mining, and the associated tools in R to analyze a data set from US Twitter.
 
 ## Some Data Outputs
 
