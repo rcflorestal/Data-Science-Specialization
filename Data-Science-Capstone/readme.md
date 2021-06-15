@@ -28,3 +28,7 @@ we will use Natural Language Processing, Text Mining, and the associated tools i
 <p align="center">
   <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/Most_Frequent_Bigrams.png">
   </p>
+# Most Frequente Trigrams
+<p align="center">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/Most_Freq_trigrams.png">
+  </p>
