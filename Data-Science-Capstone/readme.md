@@ -4,32 +4,32 @@ we will use Natural Language Processing, Text Mining, and the associated tools i
 
 ## Some Data Outputs
 
-# Summary of the data sets
+### Summary of the data sets
 <p align="center">
   <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/tab_1_summary.png">
 </p>
 
-# Word Cloud Chart
+### Word Cloud Chart
 <p align="center">
   <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/wordCloud.png">
 </p>
 
-# Most Profanity Words on US Twitter
+### Most Profanity Words on US Twitter
 <p align="center">
   <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/Most_Profanity_Used.png">
 </p>
 
-# Sentiment of Words
+### Sentiment of Words
 <p align="center">
   <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/SentimentChart.png">
   </p>
 
-# Most Frequent Bigrams
+### Most Frequent Bigrams
 <p align="center">
   <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/Most_Frequent_Bigrams.png">
   </p>
   
-# Most Frequente Trigrams
+### Most Frequente Trigrams
 <p align="center">
   <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/Most_Freq_trigrams.png">
   </p>
