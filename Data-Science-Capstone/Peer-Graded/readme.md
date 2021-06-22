@@ -12,7 +12,7 @@ In the next step, we will develop an app using the R package "shiny".
 </p>
 
 ## Data Samplig
-As it turns out in the table above, the data sets are very larges and require a long time to read and process, which made us adopt a sampling of 25% of the data sets.
+As it turns out in the table above, the data sets are very larges and require a long time to read and process, which made us adopt a sampling of 20% of the each data set.
 
 ## Lexical analysis
 Lexical analysis was performed using R packages sentimentr [1], tm [2], tidytext [3] and, wordcloud [4]. The figure below shows the most frequently used words, most frequent profanity words, most frequent bigrams, and most frequent three grams on US Twitter.
