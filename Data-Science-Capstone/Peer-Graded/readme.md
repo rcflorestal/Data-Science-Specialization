@@ -15,20 +15,51 @@ In the next step, we will develop an app using the R package "shiny" [4].
 As it turns out in the table above, the data sets are very larges and require a long time to read and process, which made us adopt a sampling of 20% of the each data set.
 
 ## Lexical analysis
-Lexical analysis was performed using R packages sentimentr [1], tidytext [2] and, wordcloud [3]. The figure below shows the most frequently used words, most frequent profanity words, most frequent bigrams, and most frequent three grams on US Twitter.
+Lexical analysis was performed using R packages sentimentr [1], tidytext [2] and, wordcloud [3]. The figures below show the most frequently used words, most frequent profanity words, most frequent bigrams and trigrams, most positive and negative words on US Twitter, US blogs, and US news.
 
+### Most frequent words on US Twitter
 <p align="center">
-  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/Peer-Graded/output/Rplot.png?raw=true">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/Peer-Graded/output/WordCloud_US_Twitter200.png">
 </p>
 
-### Most frequente words on US Twitter
+### Most frequent words on US Blogs
 <p align="center">
-  <img src="">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/Peer-Graded/output/WordCloud_US_Blog200.png">
 </p>
 
-## Word Cloud Chart
+### Most frequent words on US News
 <p align="center">
-  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/wordCloud.png">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/Peer-Graded/output/WordCloud_US_News200.png">
+</p>
+
+### Most frequent profanity words
+<p align="center">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/Peer-Graded/output/profanityWords.png">
+</p>
+
+### Most frequent bigrams
+<p align="center">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/Peer-Graded/output/bigrams.png">
+</p>
+
+### Most frequent trigrams
+<p align="center">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/Peer-Graded/output/trigrams.png">
+</p>
+
+### Most positive and negative words on Twitter
+<p align="center">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/Peer-Graded/output/Posite-and-Negative-Words-Twitter2.png">
+</p>
+
+### Most positive and negative words on US blogs
+<p align="center">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/Peer-Graded/output/Posite-and-Negative-Words-Blogs2.png">
+</p>
+
+### Most positive and negative words on US News
+<p align="center">
+  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/Peer-Graded/output/Posite-and-Negative-Words-News_2.png">
 </p>
 
 ## References
