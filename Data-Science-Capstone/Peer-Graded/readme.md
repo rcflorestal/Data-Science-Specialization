@@ -11,7 +11,7 @@ In the next step, we will develop an app using the R package "shiny" [4].
   <img width="450" height="250" src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/Peer-Graded/output/summaryTable.png">
 </p>
 
-## Data Samplig
+## Data Sampling
 As it turns out in the table above, the data sets are very larges and require a long time to read and process, which made us adopt a sampling of 20% of the each data set.
 
 ## Lexical analysis
