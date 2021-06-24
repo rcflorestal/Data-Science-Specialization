@@ -8,7 +8,7 @@ In the next step, we will develop an app using the R package "shiny" [4].
 ## Summary Data sets
 
 <p align="center">
-  <img src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/tasks/out/tab_1_summary.png">
+  <img width="450" height="250" src="https://github.com/rcflorestal/Data-Science-Specialization/blob/main/Data-Science-Capstone/Peer-Graded/output/summaryTable.png">
 </p>
 
 ## Data Samplig
