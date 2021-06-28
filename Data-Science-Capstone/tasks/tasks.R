@@ -13,9 +13,11 @@ library(quanteda.textstats)
 library(RColorBrewer)       # color palettes
 library(dplyr)
 library(ggplot2)
+library(tidyverse)
 library(tidytext)
 library(gt)
 library(janeaustenr)
+library(gridExtra)
 
 ## Set the work directory
 setwd('C:/Data-Science-Foundations-using-R-Specialization/Data-Science-Capstone/tasks/')
@@ -61,16 +63,20 @@ close(con)
 #
 tokenized <- function(txt){
         # Remove all punctuation signs without apostrophe
-        clear <- gsub("[^[:alnum:][:space:]']", '', txt)
+        txt <- gsub("[^[:alnum:][:space:]']", '', txt)
         
-        ## Remove all numbers
-        clear <- gsub('[0-9]', '', clear)
+        # Remove all numbers
+        txt <- gsub('[0-9]', '', txt)
         
-        ## Remove excessive space between words
-        clear <- gsub('\\s+', ' ', clear)
+        # Remove excessive space between words
+        txt <- gsub('\\s+', ' ', txt)
+        txt <- gsub('^[[:space:]]*', '', txt)
         
-        ## Converts all word to lowercase
-        clear <- tolower(clear)
+        # Converts all word to lowercase
+        txt <- tolower(txt)
+        
+        # return clean data set
+        return(txt)
 }
 
 ## Apply the function to clear the tweeter texts 
@@ -100,7 +106,8 @@ twitterClear <- readLines(
 tw <- readLines('C:/Data-Science-Foundations-using-R-Specialization/Data-Science-Capstone/tasks/tweeterClear.txt')
 
 ## Set the sample of the data set
-samp <- sample(tw, replace = TRUE, size = 20000)
+samp <- sample(tw, length(tw) * 0.03, replace = FALSE)
+
 write(
         samp, 
         'C:/Data-Science-Foundations-using-R-Specialization/Data-Science-Capstone/tasks/sample.txt'
@@ -209,10 +216,6 @@ sumDF %>%
                 table.background.color = 'white'
         )
         
-## Set n-grams
-n_gram2 <-  voc %>%
-        unnest_tokens(bigram, 'text', n = 2, token = 'ngrams')
-
 ## Extract sentences of the sample
 tws <- get_sentences(samp)
 
@@ -246,32 +249,67 @@ countProfplot <- countProf %>%
 countProfplot$words <- with(countProfplot, reorder(words, n))
 
 # set the chart
-ggplot(countProfplot, aes(x = n, y = words)) +
+p <- ggplot(countProfplot, aes(x = n, y = words)) +
         geom_bar(stat = 'identity', 
                  position = position_dodge(0.9),
                  fill = 'steelblue') +
         theme(
                 plot.title = element_text(color = 'black', 
-                                          size = 13, 
-                                          face = 'bold', 
-                                          hjust = 0.5),
-                axis.title.x = element_text(size = 13),
-                axis.title.y = element_text(size = 14),
-                strip.text = element_text(face = 'italic'),
+                                          size = 11, face = 'bold'),
+                axis.title.x = element_text(size = 11),
+                axis.title.y = element_text(size = 11),
+                #strip.text = element_text(face = 'italic'),
                 legend.position = 'top',
                 legend.background = element_rect(fill = "gray90")
                 
         ) +
         labs(
-                title = '',
-                x = '', 
-                y = ''
+                title = 'Most Frequent Profanity Words',
+                x = 'n', 
+                y = 'Frequency'
         )
 
 
 ## How many of the words come from foreign languages? ##
 # profElem <- attributes(extract_profanity_terms(tws))$elements
 # p <- profElem[profElem$words!=c("'"), ]
+
+## Set n-grams
+sentences <- as.data.frame(prof_words$sentence)
+varCol <- 'Sentence'
+names(sentences) <- varCol
+
+# 2 n-grams
+toBigrams <- sentences %>% 
+        unnest_tokens(bigram, 'Sentence', n = 2, token = 'ngrams') %>%
+        filter(!is.na(bigram)) %>%
+        count(bigram, sort = TRUE) %>%
+        mutate(id = 1:n()) %>%
+        filter(id <= 15)
+
+bigrams <- ggplot(toBigrams, aes(reorder(bigram, n), n)) +
+        geom_col(fill = 'steelblue') +
+        coord_flip() +
+        theme(plot.title = element_text(colour = 'black',
+                                        size = 11, face = 'bold')) +
+        labs(title = 'Most Frequent Bigrams', y = 'n', x = 'Bigram')
+
+# 3 n-grams
+threeGrams <- sentences %>%
+        unnest_tokens(bigram, 'Sentence', n = 3, token = 'ngrams') %>%
+        filter(!is.na(bigram)) %>%
+        count(bigram, sort = TRUE) %>%
+        mutate(id = 1:n()) %>%
+        filter(id <= 15)
+
+thrGrames <- ggplot(threeGrams, aes(reorder(bigram, n), n)) +
+        geom_col(fill = 'steelblue') +
+        coord_flip() +
+        theme(plot.title = element_text(color = 'black',
+                                        size = 11, face = 'bold')) +
+        labs(title = 'Most Frequent Threegrams', x = 'Trigram', y = 'n')
+
+# Filter the words that starts with "not" to make a setiment analyze
 
 
 ## Extract emotion words
@@ -397,7 +435,7 @@ table_1
 
 ### Generate the Word cloud without profanity###
 set.seed(1234)
-wordcloud(words = wdfreq$word, 
+wd = wordcloud(words = wdfreq$word, 
           freq = wdfreq$freq, 
           min.freq = 1,
           max.words = 200,
@@ -405,6 +443,19 @@ wordcloud(words = wdfreq$word,
           rot.per = 0.35, 
           colors = brewer.pal(6, 'Dark2'),
           fixed.asp = TRUE)
+
+w <- wdfreq %>%
+        mutate(N = 1:n()) %>%
+        filter(N <= 10) %>%
+        ggplot(aes(reorder(word, freq), freq)) +
+        geom_col(fill = 'steelblue') +
+        theme(plot.title = element_text(color = 'black',
+                                        size = 11, face = 'bold')) +
+        coord_flip() +
+        labs(title = 'Most Frequent Word', x = 'Word', y = 'Frequency')
+
+## Set merge charts
+chartMerge <- grid.arrange(w, p, bigrams, thrGrames)
 
 ## Most common sentiment words
 tw_counts <- nEmoTwitter %>%
