@@ -3,7 +3,7 @@ The goal of this project is to carry out an exploratory analysis in three data s
 US blogs and, Us news to create a prediction algorithm. We applied regex expressions to cleaning the data sets, which included: 
 i) Remove non-English characters; ii) Convert all words to lowercase; iii) Removing punctuation, numbers, special characters, and excessive white spaces.
 We also applied some text processing to i) remove stop words; ii) Stemming the text and, iii) Remove URLs. This task was carried on by the R package "sentimentr" [1].
-In the next step, we will develop an app using the R package "shiny" [4].
+In the next step, we will develop an [app](https://wcj7es-robson0cruz.shinyapps.io/nlp_app/?_ga=2.261910286.2025446160.1626136194-857512531.1624030812) using the R package "shiny" [4].
 
 ## Summary Data sets
 
